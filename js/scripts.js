@@ -1,6 +1,17 @@
 //Business Logic
 
+var divisibility = function(numerator, denominator) {
+  if (numerator % denominator === 0) {
+    return true;
+  }
+}
 
+var counter = function(numerator, denominator) {
+  var resultArray = [];
+  for (var result = denominator ; result <= numerator; result += denominator)
+    resultArray.push(result);
+  return resultArray;
+}
 
 
 

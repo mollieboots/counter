@@ -1,5 +1,17 @@
+describe('divisibility', function() {
+	it("test divisibility of the two inputs", function() {
+		expect(divisibility(30,5)).to.equal(true);
+	});
+});
 
-
+describe('counter', function() {
+	it("start at result = 0, increment by value of denominator until result = value of numerator", function() {
+		expect(counter(30,5)).to.eql([5,10,15,20,25,30]);
+	});
+	it("start at result = 0, increment by value of denominator until result = value of numerator", function() {
+		expect(counter(10,2)).to.eql([2,4,6,8,10]);
+	});
+});
 
 
 
